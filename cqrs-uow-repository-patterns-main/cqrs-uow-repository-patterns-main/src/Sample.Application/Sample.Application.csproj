@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net5.0</TargetFramework>
+        <AssemblyName>Sample.Application</AssemblyName>
+        <RootNamespace>Sample.Application</RootNamespace>
+    </PropertyGroup>
+    
+
+    <ItemGroup>
+      <Folder Include="Queries" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="9.0.0" />
+        <PackageReference Include="AutoMapper" Version="10.1.1" />
+        <PackageReference Include="MediatR.Extensions.Microsoft.DependencyInjection" Version="9.0.0" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.6" />
+        <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="6.7.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Sample.Domain\Sample.Domain.csproj" />
+    </ItemGroup>
+
+</Project>
